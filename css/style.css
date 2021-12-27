@@ -49,9 +49,9 @@ body{
     width: 350px;
     background-color: #FAFBFC;
     height: 100%;
-    border-right: 1px solid #C4C4C4 ;
     transform: translateX(0%);
     transition: transform 0.8s;
+    border-right: 1px solid #C4C4C4 ;
 }
 .sidenav .sidenav__brand{
     display: flex;
@@ -102,15 +102,14 @@ body{
     line-height: 21px;
     color: #747474;
 }
-.main__menu-btnsidenav{
-    position: absolute;
-    width: 24px;
-    height: 24px;
-    color: #000;
-    top: 35px;
-    right: -12px;
+#check{
+    display: none;
 }
-
-.nav__input:checked ~ .sidenav{
+label #button_check{
+    position:absolute;
+    cursor: pointer;
+    top: 0;
+}
+#check:checked ~.sidenav{
     transform: translateX(-100%);
 }
