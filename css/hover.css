@@ -1,0 +1,11 @@
+.sidenav .sidenav__nav .main_menu .main_menu-link:hover{
+    background-color: #EBECF0;
+    cursor: pointer;
+}
+
+.sidenav .sidenav__nav .main_menu .main_menu-link:hover .icon_right{
+    display: block;
+}
+.main__menu-btnsidenav:hover{
+    cursor: pointer;
+}

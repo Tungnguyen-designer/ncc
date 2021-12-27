@@ -1,0 +1,116 @@
+body{
+    font-family: 'Roboto', sans-serif;
+}
+.header {
+    display: flex;
+    justify-content: space-between;
+    background-color:#F7CC4B;;
+}
+.header .brand{
+    display: flex;
+    align-items: center;
+    margin: 13px 0 13px 20px;
+}
+.header .brand .brand-logo{
+    width: 60px;
+    height: 60px;
+    margin-right: 12px;
+}
+.header .brand .brand-title{
+    font-style: normal;
+    font-weight: bold;
+    font-size: 24px;
+    line-height: 32px;
+    color: #D63447;
+    margin: 0;
+}
+.header .info{
+    display: flex;
+    align-items: center;
+}
+.header .info .info__name{
+    font-style: normal;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 24px;
+    color: #16697A;
+    margin: 0 10px 0 0;
+}
+.header .info .info__btn-logout{
+    height: 100%;
+    width: 50px;
+    background-color:#16697A;
+    border: none;
+}
+.sidenav{
+    left: 0;
+    position: fixed;
+    padding: 20px 8px;
+    width: 350px;
+    background-color: #FAFBFC;
+    height: 100%;
+    border-right: 1px solid #C4C4C4 ;
+    transform: translateX(0%);
+    transition: transform 0.8s;
+}
+.sidenav .sidenav__brand{
+    display: flex;
+    align-items: center;
+    padding: 20px;
+    
+}
+.sidenav .sidenav__brand svg{
+    margin-right: 12px;
+}
+.sidenav .sidenav__brand h4{
+    font-style: normal;
+    font-weight: bold;
+    font-size: 16px;
+    line-height: 21px;
+    margin: 0;
+}
+.sidenav .sidenav__nav .main_menu .main_menu-group{
+    display: flex;
+    align-items: center;
+}
+.sidenav .sidenav__nav .main_menu .main_menu-link{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 18px 16px 18px 26px ;
+    border-radius: 6px;
+}
+.sidenav .sidenav__nav .main_menu .main_menu-link .title{
+    margin: 0;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 21px;
+    margin-left: 8px;
+}
+.sidenav .sidenav__nav .main_menu .main_menu-link .icon_right{
+    display: none;
+}
+.copyright{
+    width: 350px;
+    position: fixed;
+    bottom: 0;
+    text-align: center;
+    font-style: normal;
+    font-weight: 300;
+    font-size: 14px;
+    line-height: 21px;
+    color: #747474;
+}
+.main__menu-btnsidenav{
+    position: absolute;
+    width: 24px;
+    height: 24px;
+    color: #000;
+    top: 35px;
+    right: -12px;
+}
+
+.nav__input:checked ~ .sidenav{
+    transform: translateX(-100%);
+}
