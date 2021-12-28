@@ -1,11 +1,12 @@
-.sidenav .sidenav__nav .main_menu .main_menu-link:hover{
+.sidebar.active .nav_list-item:hover{
     background-color: #EBECF0;
+    border-radius: 6px;
     cursor: pointer;
 }
-
-.sidenav .sidenav__nav .main_menu .main_menu-link:hover .icon_right{
+.sidebar .nav_list .nav_list-item:hover .btn-right{
     display: block;
+    cursor: pointer;
 }
-.main__menu-btnsidenav:hover{
+#buttonside:hover{
     cursor: pointer;
 }
